@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		642B6D83370DE1AF0AD45692 /* Pods_SampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E46D788B6039289B8F6AEC /* Pods_SampleProject.framework */; };
 		C83CD12D1F7E50F10246027B /* Pods_SampleProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0716342DFA0D8F06E6C0FC /* Pods_SampleProjectTests.framework */; };
 		F0D8E64C2572CC620058EC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8E64B2572CC620058EC30 /* AppDelegate.swift */; };
 		F0D8E64E2572CC620058EC30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8E64D2572CC620058EC30 /* SceneDelegate.swift */; };
@@ -49,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642B6D83370DE1AF0AD45692 /* Pods_SampleProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +79,6 @@
 				C5314CC750B82F0795C3E269 /* Pods-SampleProjectTests.debug.xcconfig */,
 				97BA4E7DD523CBE3F6F2F706 /* Pods-SampleProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +142,7 @@
 				F0D8E6442572CC620058EC30 /* Sources */,
 				F0D8E6452572CC620058EC30 /* Frameworks */,
 				F0D8E6462572CC620058EC30 /* Resources */,
+				F05F013E2573BBFB00E179CB /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -275,6 +273,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F05F013E2573BBFB00E179CB /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
