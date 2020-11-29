@@ -1,0 +1,12 @@
+//
+//  SampleProject-DEV.xcconfig
+//  SampleProject
+//
+//  Created by Krystian Bujak on 29/11/2020.
+//  Copyright © 2020 Booyac IT. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+env_name="Development"
